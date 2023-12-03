@@ -202,7 +202,7 @@ function makeClosure(arg0, arg1, dtor, f) {
     return real;
 }
 function __wbg_adapter_26(arg0, arg1) {
-    wasm._dyn_core__ops__function__Fn_____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__hb8b4acd3c311a3cb(arg0, arg1);
+    wasm._dyn_core__ops__function__Fn_____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h5bdbb999d0972c4b(arg0, arg1);
 }
 
 function makeMutClosure(arg0, arg1, dtor, f) {
@@ -234,26 +234,16 @@ function __wbg_adapter_29(arg0, arg1, arg2) {
 }
 
 /**
-* @param {string} id
-* @returns {Promise<any>}
-*/
-export function get_food_pic(id) {
-    const ptr0 = passStringToWasm0(id, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
-    const len0 = WASM_VECTOR_LEN;
-    const ret = wasm.get_food_pic(ptr0, len0);
-    return takeObject(ret);
-}
-
-/**
-* @param {string} id
+* @param {string} url
 * @returns {Promise<string>}
 */
-export function get_menu(id) {
-    const ptr0 = passStringToWasm0(id, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+function fetch2(url) {
+    const ptr0 = passStringToWasm0(url, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
     const len0 = WASM_VECTOR_LEN;
-    const ret = wasm.get_menu(ptr0, len0);
+    const ret = wasm.fetch(ptr0, len0);
     return takeObject(ret);
 }
+export { fetch2 as fetch };
 
 /**
 * @param {string} id
@@ -298,16 +288,26 @@ export function memes() {
 }
 
 /**
-* @param {string} url
-* @returns {Promise<string>}
+* @param {string} id
+* @returns {Promise<any>}
 */
-function fetch2(url) {
-    const ptr0 = passStringToWasm0(url, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+export function get_food_pic(id) {
+    const ptr0 = passStringToWasm0(id, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
     const len0 = WASM_VECTOR_LEN;
-    const ret = wasm.fetch(ptr0, len0);
+    const ret = wasm.get_food_pic(ptr0, len0);
     return takeObject(ret);
 }
-export { fetch2 as fetch };
+
+/**
+* @param {string} id
+* @returns {Promise<string>}
+*/
+export function get_menu(id) {
+    const ptr0 = passStringToWasm0(id, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+    const len0 = WASM_VECTOR_LEN;
+    const ret = wasm.get_menu(ptr0, len0);
+    return takeObject(ret);
+}
 
 function handleError(f, args) {
     try {
@@ -747,12 +747,12 @@ function __wbg_get_imports() {
         const ret = wasm.memory;
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper4690 = function(arg0, arg1, arg2) {
-        const ret = makeClosure(arg0, arg1, 429, __wbg_adapter_26);
+    imports.wbg.__wbindgen_closure_wrapper4669 = function(arg0, arg1, arg2) {
+        const ret = makeClosure(arg0, arg1, 426, __wbg_adapter_26);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper9847 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 504, __wbg_adapter_29);
+    imports.wbg.__wbindgen_closure_wrapper9835 = function(arg0, arg1, arg2) {
+        const ret = makeMutClosure(arg0, arg1, 503, __wbg_adapter_29);
         return addHeapObject(ret);
     };
 
@@ -793,7 +793,7 @@ async function __wbg_init(input) {
     if (wasm !== undefined) return wasm;
 
     if (typeof input === 'undefined') {
-        input = new URL('fscs_monitor-665e9f10ac37c2e0_bg.wasm', import.meta.url);
+        input = new URL('fscs_monitor-5c8df72fba8ea997_bg.wasm', import.meta.url);
     }
     const imports = __wbg_get_imports();
 
