@@ -268,14 +268,6 @@ export function get_station_name(id) {
 }
 
 /**
-* @returns {Promise<string>}
-*/
-export function memes() {
-    const ret = wasm.memes();
-    return takeObject(ret);
-}
-
-/**
 * @param {string} id
 * @returns {Promise<any>}
 */
@@ -312,7 +304,7 @@ function getCachedStringFromWasm0(ptr, len) {
         return getStringFromWasm0(ptr, len);
     }
 }
-function __wbg_adapter_148(arg0, arg1, arg2, arg3) {
+function __wbg_adapter_147(arg0, arg1, arg2, arg3) {
     wasm.wasm_bindgen__convert__closures__invoke2_mut__h52cdb2dced9b3dfe(arg0, arg1, addHeapObject(arg2), addHeapObject(arg3));
 }
 
@@ -642,7 +634,7 @@ function __wbg_get_imports() {
                 const a = state0.a;
                 state0.a = 0;
                 try {
-                    return __wbg_adapter_148(a, state0.b, arg0, arg1);
+                    return __wbg_adapter_147(a, state0.b, arg0, arg1);
                 } finally {
                     state0.a = a;
                 }
@@ -731,12 +723,12 @@ function __wbg_get_imports() {
         const ret = wasm.memory;
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper4642 = function(arg0, arg1, arg2) {
-        const ret = makeClosure(arg0, arg1, 421, __wbg_adapter_26);
+    imports.wbg.__wbindgen_closure_wrapper4355 = function(arg0, arg1, arg2) {
+        const ret = makeClosure(arg0, arg1, 395, __wbg_adapter_26);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper9804 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 498, __wbg_adapter_29);
+    imports.wbg.__wbindgen_closure_wrapper9517 = function(arg0, arg1, arg2) {
+        const ret = makeMutClosure(arg0, arg1, 472, __wbg_adapter_29);
         return addHeapObject(ret);
     };
 
@@ -777,7 +769,7 @@ async function __wbg_init(input) {
     if (wasm !== undefined) return wasm;
 
     if (typeof input === 'undefined') {
-        input = new URL('fscs_monitor-34425fcaea70591b_bg.wasm', import.meta.url);
+        input = new URL('fscs_monitor-3f7dcd85c0a75acc_bg.wasm', import.meta.url);
     }
     const imports = __wbg_get_imports();
 
