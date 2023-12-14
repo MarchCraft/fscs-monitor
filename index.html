@@ -106,9 +106,15 @@ table#mensa{
 </style>
 
   
-<link rel="preload" href="/fscs_monitor-9aa4c9120f77c584_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/fscs_monitor-9aa4c9120f77c584.js"></head>
+<link rel="preload" href="/fscs_monitor-44c8bd4156dc74309c6b6285f5df62e7a8cc6f65a4f7af872eec79d8afc055a879ea96a309c37bcbd2755684a6e79ca3_bg.wasm" as="fetch" type="application/wasm" crossorigin="anonymous" integrity="sha384-RMi9QVbcdDCca2KF9d9i56jMb2Wk96-HLux52K_AVah56pajCcN7y9J1VoSm55yj">
+<link rel="modulepreload" href="/fscs_monitor-44c8bd4156dc74309c6b6285f5df62e7a8cc6f65a4f7af872eec79d8afc055a879ea96a309c37bcbd2755684a6e79ca3.js" crossorigin="anonymous" integrity="sha384-EUVdiXlcuHRV-IGSENcs1RlqN8_3p0e4_s3QvUSbyKZrBVxKCse7QAFKsEWfx_BK"></head>
   <body>
   
 
-<script type="module">import init from '/fscs_monitor-9aa4c9120f77c584.js';init('/fscs_monitor-9aa4c9120f77c584_bg.wasm');</script></body></html>
+
+<script type="module">
+import init, * as bindings from '/fscs_monitor-44c8bd4156dc74309c6b6285f5df62e7a8cc6f65a4f7af872eec79d8afc055a879ea96a309c37bcbd2755684a6e79ca3.js';
+init('/fscs_monitor-44c8bd4156dc74309c6b6285f5df62e7a8cc6f65a4f7af872eec79d8afc055a879ea96a309c37bcbd2755684a6e79ca3_bg.wasm');
+window.wasmBindings = bindings;
+
+</script></body></html>
