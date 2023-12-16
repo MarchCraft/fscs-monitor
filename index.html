@@ -1,11 +1,7 @@
 <!DOCTYPE html><html><head>
+
 <style>
 @import url('https://fonts.cdnfonts.com/css/5by7');
-.snowflakes_body{
-    height:100vh;
-    overflow:initial;
-    width:100vw;
-}
 @-moz-keyframes my-animation {
   from { -moz-transform: translateX(100%); }
   to { -moz-transform: translateX(-100%); }
@@ -24,6 +20,12 @@
   100% {
     transform: translate(-66.6666666%, 0);
   }
+}
+
+.snowflakes_body{
+    height:100vh;
+    overflow:initial;
+    width:100vw;
 }
 
 .scroll{
@@ -54,9 +56,6 @@ div {
 text-overflow: ellipsis;
 
 }
-.snowflakes_body div{
-    overflow:initial;
-}
 html, body {
     cursor:none;
     background-color: #000000;
@@ -70,12 +69,12 @@ html, body {
     width: 100%;;
 }
 h1{
-    font-size: 2.5vw;
+    font-size: 2vw;
     margin: 0;
     font-weight: normal;
 }
 tr{
-    font-size: 2.3vw;
+    font-size: 1.8vw;
     color: #00cc00;
 }
 th{
@@ -102,19 +101,33 @@ table#mensa{
     background-image:url('https://static.planetminecraft.com/files/image/minecraft/texture-pack/2020/428/13530476-cover_l.jpg');
     background-size:contain;
 }
+.snowflakes_body div{
+    overflow:initial;
+}
 
 </style>
 
   
-<link rel="preload" href="/fscs_monitor-44c8bd4156dc74309c6b6285f5df62e7a8cc6f65a4f7af872eec79d8afc055a879ea96a309c37bcbd2755684a6e79ca3_bg.wasm" as="fetch" type="application/wasm" crossorigin="anonymous" integrity="sha384-RMi9QVbcdDCca2KF9d9i56jMb2Wk96-HLux52K_AVah56pajCcN7y9J1VoSm55yj">
-<link rel="modulepreload" href="/fscs_monitor-44c8bd4156dc74309c6b6285f5df62e7a8cc6f65a4f7af872eec79d8afc055a879ea96a309c37bcbd2755684a6e79ca3.js" crossorigin="anonymous" integrity="sha384-EUVdiXlcuHRV-IGSENcs1RlqN8_3p0e4_s3QvUSbyKZrBVxKCse7QAFKsEWfx_BK"></head>
+<link rel="preload" href="/fscs_monitor-a60bc7bfe973cba44e2cd189b09d005028c66514acb2f1293875ce735978ed438e74e09c2e14c8d78c19f7ad105635be_bg.wasm" as="fetch" type="application/wasm" crossorigin="anonymous" integrity="sha384-pgvHv-lzy6ROLNGJsJ0AUCjGZRSssvEpOHXOc1l47UOOdOCcLhTI14wZ960QVjW-">
+<link rel="modulepreload" href="/fscs_monitor-a60bc7bfe973cba44e2cd189b09d005028c66514acb2f1293875ce735978ed438e74e09c2e14c8d78c19f7ad105635be.js" crossorigin="anonymous" integrity="sha384-_bp8w2jpH9mkFnriN0shrxaHRFJrFfJ7CaSUWULuwP0OF8tMD7F9NnzT9wSrQA7c"></head>
   <body>
+
+      <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script>
+    var sf = new Snowflakes({
+        count: 30,
+        speed: 2,
+        minSize: 40,
+        maxSize: 100
+
+    });
+</script>
   
 
 
 <script type="module">
-import init, * as bindings from '/fscs_monitor-44c8bd4156dc74309c6b6285f5df62e7a8cc6f65a4f7af872eec79d8afc055a879ea96a309c37bcbd2755684a6e79ca3.js';
-init('/fscs_monitor-44c8bd4156dc74309c6b6285f5df62e7a8cc6f65a4f7af872eec79d8afc055a879ea96a309c37bcbd2755684a6e79ca3_bg.wasm');
+import init, * as bindings from '/fscs_monitor-a60bc7bfe973cba44e2cd189b09d005028c66514acb2f1293875ce735978ed438e74e09c2e14c8d78c19f7ad105635be.js';
+init('/fscs_monitor-a60bc7bfe973cba44e2cd189b09d005028c66514acb2f1293875ce735978ed438e74e09c2e14c8d78c19f7ad105635be_bg.wasm');
 window.wasmBindings = bindings;
 
 </script></body></html>
