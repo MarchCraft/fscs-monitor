@@ -69,16 +69,17 @@ html, body {
     width: 100%;;
 }
 h1{
-    font-size: 2vw;
+    font-size: 2.2vw;
     margin: 0;
     font-weight: normal;
 }
 tr{
-    font-size: 1.8vw;
+    font-size: 2.1vw;
     color: #00cc00;
 }
 th{
     max-width: fit-content;
+    font-size: 2.1vw;
     font-weight: normal;
 }
 td{
@@ -108,26 +109,10 @@ table#mensa{
 </style>
 
   
-<link rel="preload" href="/fscs_monitor-a60bc7bfe973cba44e2cd189b09d005028c66514acb2f1293875ce735978ed438e74e09c2e14c8d78c19f7ad105635be_bg.wasm" as="fetch" type="application/wasm" crossorigin="anonymous" integrity="sha384-pgvHv-lzy6ROLNGJsJ0AUCjGZRSssvEpOHXOc1l47UOOdOCcLhTI14wZ960QVjW-">
-<link rel="modulepreload" href="/fscs_monitor-a60bc7bfe973cba44e2cd189b09d005028c66514acb2f1293875ce735978ed438e74e09c2e14c8d78c19f7ad105635be.js" crossorigin="anonymous" integrity="sha384-_bp8w2jpH9mkFnriN0shrxaHRFJrFfJ7CaSUWULuwP0OF8tMD7F9NnzT9wSrQA7c"></head>
+<link rel="preload" href="/fscs_monitor-880c2d1a2ca13202_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/fscs_monitor-880c2d1a2ca13202.js"></head>
   <body>
 
-      <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
-<script>
-    var sf = new Snowflakes({
-        count: 30,
-        speed: 2,
-        minSize: 40,
-        maxSize: 100
-
-    });
-</script>
   
 
-
-<script type="module">
-import init, * as bindings from '/fscs_monitor-a60bc7bfe973cba44e2cd189b09d005028c66514acb2f1293875ce735978ed438e74e09c2e14c8d78c19f7ad105635be.js';
-init('/fscs_monitor-a60bc7bfe973cba44e2cd189b09d005028c66514acb2f1293875ce735978ed438e74e09c2e14c8d78c19f7ad105635be_bg.wasm');
-window.wasmBindings = bindings;
-
-</script></body></html>
+<script type="module">import init from '/fscs_monitor-880c2d1a2ca13202.js';init('/fscs_monitor-880c2d1a2ca13202_bg.wasm');</script></body></html>
