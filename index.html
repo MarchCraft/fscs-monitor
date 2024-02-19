@@ -1,1 +1,118 @@
-<!doctype html><style>@import "https://fonts.cdnfonts.com/css/5by7";@-moz-keyframes my-animation{0%{-moz-transform:translate(100%)}to{-moz-transform:translate(-100%)}}@-webkit-keyframes my-animation{0%{-webkit-transform:translate(100%)}to{-webkit-transform:translate(-100%)}}@keyframes my-animation{0%{transform:translate(0)}to{transform:translate(-66.6667%)}}.snowflakes_body{overflow:initial;width:100vw;height:100vh}.scroll{-webkit-animation:15s linear infinite my-animation;-moz-animation:15s linear infinite my-animation;animation:15s linear infinite my-animation;-webkit-transform:translate(100%);-moz-transform:translate(100%);transform:translate(100%)}.error{color:red;vertical-align:middle;background-color:#000;font-size:8vw}div{float:left;color:#ccc;text-align:center;white-space:nowrap;text-overflow:ellipsis;width:50%;height:50%;font-family:"5by7",monospace;overflow:hidden}html,body{cursor:none;background-color:#000;height:100%;margin:0;padding:0}.center{width:100%;margin-left:auto;margin-right:auto}h1{margin:0;font-size:2.2vw;font-weight:400}tr{color:#0c0;font-size:2.1vw}th{max-width:fit-content;font-size:2.1vw;font-weight:400}td{vertical-align:bottom;height:50px}table{width:100%;margin-left:auto;margin-right:auto}.hidden{display:none}table#mensa{table-layout:fixed;background-image:url(https://static.planetminecraft.com/files/image/minecraft/texture-pack/2020/428/13530476-cover_l.jpg);background-size:contain;height:100%;padding:15pt}.snowflakes_body div{overflow:initial}</style><link as=fetch crossorigin href=/fscs-monitor/fscs_monitor-880c2d1a2ca13202_bg.wasm integrity=sha384-gvs95fFgs_oHYSn4vskTa1S079qtFeWts7IXCbcmUdlzxF02gJDAjb28ZTB_CxVX rel=preload type=application/wasm><link crossorigin href=/fscs-monitor/fscs_monitor-880c2d1a2ca13202.js integrity=sha384-5DqazX_LNFiQiYP2Qc6-iJRlr3o5U4NmwZgwd_w7-fARErjYSnWs_kB4yqCEGvrg rel=modulepreload></head><body><script type=module>import a,*as b from"/fscs-monitor/fscs_monitor-880c2d1a2ca13202.js";a(`/fscs-monitor/fscs_monitor-880c2d1a2ca13202_bg.wasm`);window.wasmBindings=b</script></body></html>
+<!DOCTYPE html><html><head>
+
+<style>
+@import url('https://fonts.cdnfonts.com/css/5by7');
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-66.6666666%, 0);
+  }
+}
+
+.snowflakes_body{
+    height:100vh;
+    overflow:initial;
+    width:100vw;
+}
+
+.scroll{
+    -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+.error{
+    color: #ff0000;
+    background-color: #000000;
+    vertical-align: middle;
+    font-size: 8vw; 
+}
+
+div {
+  width: 50%;
+  height: 50%;
+  float: left;
+  color: #cccccc;
+  text-align: center;
+  font-family: '5by7', monospace;
+  overflow: hidden;
+  white-space: nowrap; /* Don't forget this one */
+text-overflow: ellipsis;
+
+}
+html, body {
+    cursor:none;
+    background-color: #000000;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;;
+}
+h1{
+    font-size: 2.2vw;
+    margin: 0;
+    font-weight: normal;
+}
+tr{
+    font-size: 2.1vw;
+    color: #00cc00;
+}
+th{
+    max-width: fit-content;
+    font-size: 2.1vw;
+    font-weight: normal;
+}
+td{
+     height: 50px;
+  vertical-align: bottom;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.hidden{
+    display: none;
+}
+table#mensa{
+    table-layout:fixed;
+    height:100%;
+    padding: 15pt;
+    background-image:url('https://static.planetminecraft.com/files/image/minecraft/texture-pack/2020/428/13530476-cover_l.jpg');
+    background-size:contain;
+}
+.snowflakes_body div{
+    overflow:initial;
+}
+
+</style>
+
+  
+<link rel="preload" href="/fscs-monitor/fscs_monitor-d339f9e6e52f89e5_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/fscs-monitor/fscs_monitor-d339f9e6e52f89e5.js"></head>
+  <body>
+
+  
+
+<script type="module">import init from '/fscs-monitor/fscs_monitor-d339f9e6e52f89e5.js';init('/fscs-monitor/fscs_monitor-d339f9e6e52f89e5_bg.wasm');</script></body></html>
